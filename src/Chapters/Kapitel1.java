@@ -39,5 +39,6 @@ public class Kapitel1 {
         }
 
         //Opgave 1.6
+
     }
 }
