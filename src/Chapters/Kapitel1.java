@@ -31,12 +31,18 @@ public class Kapitel1 {
         System.out.println(y);
 
         //Opgave 1.5
-        short Een = 0;
-        short Sum = Een;
-        while (Een <10) {
-            Een = ++Een;
-            System.out.println(Een);
+        int een = 0;
+        int sum = 0;
+        while (een <9) {
+            een = ++een;
+            if (een <= 8)
+            System.out.print(een + "+");
+            else
+                System.out.print(een);
+            sum =sum+een;
+
         }
+        System.out.println(" = " + sum);
 
         //Opgave 1.6
 
