@@ -37,5 +37,7 @@ public class Kapitel1 {
             Een = ++Een;
             System.out.println(Een);
         }
+
+        //Opgave 1.6
     }
 }
