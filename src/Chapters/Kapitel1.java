@@ -27,10 +27,12 @@ public class Kapitel1 {
         {
             System.out.println(index + " \t " + Math.pow(index, 2) + " \t " + Math.pow(index, 3) + " \t " + Math.pow(index, 4) + "\n");
         }
+
+        //Opgave 1.5
         double y = ((9.5 * 4.5) - (2.5 * 3)) / (45.5 - 3.5);
         System.out.println(y);
 
-        //Opgave 1.5
+        //Opgave 1.6
         int een = 0;
         int sum = 0;
         while (een <9) {
@@ -44,7 +46,19 @@ public class Kapitel1 {
         }
         System.out.println(" = " + sum);
 
-        //Opgave 1.6
+        //Opgave 1.7
+
+        double pii = 4;
+        double naevner = -1;
+        while (naevner < 21) {
+            naevner = naevner + 2;
+            pii=pii * (-1/naevner);
+            naevner = naevner + 2;
+            pii=pii * (1/naevner);
+        }
+        System.out.println(pii);
+
+
 
     }
 }
