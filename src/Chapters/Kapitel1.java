@@ -97,6 +97,21 @@ public class Kapitel1 {
         System.out.println("...hvilket svarer til: " + milesPerHour + " mil i timen." + '\n');
 
         //Opgave 1.11
+        //flg. er angivet per sekund
+        double birthrate = 1.0/7;
+        double deathrate = 1.0/13;
+        double migration = 1.0/45;
+        double popGrowth = birthrate - deathrate + migration;
+
+        double secPerYear = 60*60*24*365;
+        double popGrowthPerYear = popGrowth * secPerYear;
+
+        double currentPopulation = 312032486;
+
+        System.out.println("Befolkningstilvæksten per år er = " + Math.round(popGrowthPerYear));
+        System.out.println("hvilket efter 5 år giver en population på = " + Math.round((popGrowthPerYear * 5) + currentPopulation));
+
+        //opgave 1.12
 
 
     }
