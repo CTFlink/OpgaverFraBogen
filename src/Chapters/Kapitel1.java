@@ -44,19 +44,60 @@ public class Kapitel1 {
             sum =sum+een;
 
         }
-        System.out.println(" = " + sum);
+        System.out.println(" = " + sum + '\n');
 
         //Opgave 1.7
 
         double pii = 4;
-        double naevner = -1;
-        while (naevner < 21) {
+        int naevner = 1;
+        int broek = 1;
+        while (naevner <= 7) {
             naevner = naevner + 2;
-            pii=pii * (-1/naevner);
+            broek = broek - 1/naevner;
             naevner = naevner + 2;
-            pii=pii * (1/naevner);
+            broek = broek + 1/naevner;
         }
-        System.out.println(pii);
+        pii = 4 * broek;
+        System.out.println("Pi med int er ca. = " + pii);
+
+        double pii2 = 4;
+        double naevner2 = 1;
+        double broek2 = 1;
+        while (naevner2 <= 7) {
+            naevner2 = naevner2 + 2;
+            broek2 = broek2 - 1/naevner2;
+            naevner2 = naevner2 + 2;
+            broek2 = broek2 + 1/naevner2;
+        }
+        pii2 = 4 * broek2;
+        System.out.println("Pi med double er ca. = " + pii2 + '\n');
+
+        //Opgave 1.8
+
+        double perimeter = 2 * 5.5 * PI;
+        double area = 5.5 * 5.5 * PI;
+        System.out.println("Omkredsen i en cirkel med radius på 5,5 er = " + perimeter);
+        System.out.println("Arealet i en cirkel med radius på 5,5 er = " + area + '\n');
+
+        //Opgave 1.9
+
+        double omkreds = 4.5 + 4.5 + 7.9 + 7.9;
+        double areal = 4.5 * 7.9;
+        System.out.println("Omkredsen af en rektangel med siderne 4.5 og 7.9 er = " + omkreds);
+        System.out.println("Arealet af dette rektangel er = " + areal + '\n');
+
+        //Opgave 1.10
+
+        double kilometer = 14;
+        double minutter = 45.5;
+        double kmPerHour = kilometer/minutter*60;
+        double milesPerHour = kmPerHour/1.6;
+
+        System.out.println(kilometer + "km på " + minutter + " minutter svarer til = " + kmPerHour + "km i timen.");
+        System.out.println("...hvilket svarer til: " + milesPerHour + " mil i timen." + '\n');
+
+        //Opgave 1.11
+
 
 
 
