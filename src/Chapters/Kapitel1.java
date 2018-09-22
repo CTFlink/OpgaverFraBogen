@@ -113,6 +113,5 @@ public class Kapitel1 {
 
         //opgave 1.12
 
-
     }
 }
