@@ -113,5 +113,13 @@ public class Kapitel1 {
 
         //opgave 1.12
 
+        double miles = 24;
+        double sekunder = ((60+40)*60) + 35;
+
+
+
+        //Opgave 1.13
+
+
     }
 }

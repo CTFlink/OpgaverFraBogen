@@ -15,7 +15,6 @@ public class Kapitel2 {
 
         System.out.println("Dit tal er : " + number1);
 
-
 //opgave 2.3
         //Nej der er ingen forskel
 
@@ -30,15 +29,17 @@ public class Kapitel2 {
 
 //Opgave 2.21
     //For sjov opgave med temperatur converter.
-        Scanner temp = new Scanner(System.in);
+   /*     Scanner temp = new Scanner(System.in);
         System.out.println("For at køre Tempereatur converteren tryk 'y' ellers tryk 'n'");
 
-        boolean tempStart = temp.nextBoolean();
+        String tempStart = temp.next();
 
-        if (tempStart = true) {
-        TemperaturConverter() ;
+        if (tempStart.toLowerCase() == "y") {
+            TemperaturConverter tempe = new TemperaturConverter();
+            tempe.method();
 
     }
+}*/
 }
 
-
+}
