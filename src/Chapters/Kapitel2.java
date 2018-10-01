@@ -39,14 +39,53 @@ public class Kapitel2 {
             tempe.method();
     }
 }*/
+//Opgave 2.1
         Scanner inputCelsius = new Scanner(System.in);
         System.out.println("indtast en grad i celsius");
-        double fahrenheit = inputCelsius.nextDouble();
+        double celsius = inputCelsius.nextDouble();
+        double fahrenheit = (9.0 / 5) * celsius + 32;
 
-        System.out.println(inputCelsius + " i celsius svarer til : " + fahrenheit + " grader fahrenheit.");
+        System.out.println(celsius + " i celsius svarer til : " + fahrenheit + " grader fahrenheit.");
+
+
+//Opgave 2.2
+
+        Scanner inputRadius = new Scanner(System.in);
+        System.out.println("indtast cylindrens radius");
+        double radius = inputRadius.nextDouble();
+
+        Scanner inputLength = new Scanner(System.in);
+        System.out.println("indtast cylindrens længde");
+        double length = inputLength.nextDouble();
+        double area = radius * radius * PI;
+        double volume = area * length;
+
+        System.out.println("For en cylinder med " + radius + " i radius og " + length + " i længde, gør flg. sig gældende: ");
+        System.out.println("Arealet = " + area);
+        System.out.println("Volumen = " + volume);
+
+
+//Opgave 2.3
+
+        Scanner inputFeet = new Scanner(System.in);
+        System.out.println("indtast et antal fod");
+        double feet = inputFeet.nextDouble();
+        double meter = feet * 0.305;
+
+        System.out.println(feet + " fod svarer til : " + meter + " meter");
+
+
+//Opgave 2.4
+
+        Scanner inputPound = new Scanner(System.in);
+        System.out.println("indtast et antal pound");
+        double pound = inputFeet.nextDouble();
+        double kilogram = pound * 0.454;
+
+        System.out.println(pound + " pound svarer til : " + kilogram + " kilogram");
 
 
 }
 }
 
-//Opgave 2.1
+
