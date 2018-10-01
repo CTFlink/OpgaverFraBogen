@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Kapitel2 {
     public static void main(String[] args) {
         System.out.println("gsfh");
-
+/*
 //Section 2.2
 
        Scanner indtastet_tal = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class Kapitel2 {
 
 //Section 2.21
     //For sjov opgave med temperatur converter.
-   /*     Scanner temp = new Scanner(System.in);
+        Scanner temp = new Scanner(System.in);
         System.out.println("For at køre Tempereatur converteren tryk 'y' ellers tryk 'n'");
 
         String tempStart = temp.next();
@@ -39,7 +39,10 @@ public class Kapitel2 {
             tempe.method();
     }
 }*/
+
+//==========================
 //Opgave 2.1
+
         Scanner inputCelsius = new Scanner(System.in);
         System.out.println("indtast en grad i celsius");
         double celsius = inputCelsius.nextDouble();
@@ -57,6 +60,7 @@ public class Kapitel2 {
         Scanner inputLength = new Scanner(System.in);
         System.out.println("indtast cylindrens længde");
         double length = inputLength.nextDouble();
+
         double area = radius * radius * PI;
         double volume = area * length;
 
@@ -68,7 +72,7 @@ public class Kapitel2 {
 //Opgave 2.3
 
         Scanner inputFeet = new Scanner(System.in);
-        System.out.println("indtast et antal fod");
+        System.out.println("indtast et antal fod.");
         double feet = inputFeet.nextDouble();
         double meter = feet * 0.305;
 
@@ -79,10 +83,49 @@ public class Kapitel2 {
 
         Scanner inputPound = new Scanner(System.in);
         System.out.println("indtast et antal pound");
+
         double pound = inputFeet.nextDouble();
         double kilogram = pound * 0.454;
 
         System.out.println(pound + " pound svarer til : " + kilogram + " kilogram");
+
+
+//Opgave 2.5
+
+   Scanner inputTip = new Scanner(System.in);
+     System.out.print("Indtast en subtotal og en procentiel mængde tip adskilt med mellemrum. F.eks. '100 15' :");
+     String[] subtotal_gratuity = inputTip.nextLine().split(" ");
+
+     double subtotal = Double.parseDouble(subtotal_gratuity[0]);
+     double gratuity = Double.parseDouble(subtotal_gratuity[1]) / 100 * subtotal;
+     double totalFinancial = subtotal + gratuity;
+
+     System.out.printf("Andelen af tips er $%.1f og det totale tal er $%.1f ", gratuity, totalFinancial);
+
+
+//Opgave 2.6
+
+     Scanner inputTreCifret = new Scanner(System.in);
+     System.out.println("indtast et helt tal mellem 0 og 1000");
+     int treCifret = inputTreCifret.nextInt();
+
+     if (treCifret >= 1000) {
+      System.out.println("Fejl. Dit indtastede tal er over 999!");
+     }
+     else {
+      int first = (treCifret / 100) % 10;
+      int second = (treCifret / 10) %10;
+      int third = treCifret % 10;
+      int sum = first+second+third;
+
+      System.out.println("summen af tallene, " + first + second + third + " = " + sum);
+     }
+
+//Opgave 2.7
+
+     Scanner inputminutes = new Scanner(System.in);
+     System.out.println("indtast et hvilket som helst antal minutter for at konvertere det til år og dage.");
+     int treCifret = inputminutes.nextInt();
 
 
 }
