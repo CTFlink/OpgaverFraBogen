@@ -38,7 +38,7 @@ public class Kapitel2 {
             TemperaturConverter tempe = new TemperaturConverter();
             tempe.method();
     }
-}*/
+}
 
 //==========================
 //Opgave 2.1
@@ -120,13 +120,25 @@ public class Kapitel2 {
 
       System.out.println("summen af tallene, " + first + second + third + " = " + sum);
      }
-
+*/
 //Opgave 2.7
 
-     Scanner inputminutes = new Scanner(System.in);
-     System.out.println("indtast et hvilket som helst antal minutter for at konvertere det til år og dage.");
-     int treCifret = inputminutes.nextInt();
+     Scanner inputMinutes = new Scanner(System.in);
+     System.out.println("indtast et hvilket som helst antal minutter for at konvertere det til år og dage: ");
+     int minutes = inputMinutes.nextInt();
 
+     int aar = minutes /60 /24 /365; //int runder altid ned
+     int dage = minutes /60 /24 %365;
+        System.out.println(minutes + " minutter svarer til ca = " + aar + "år og " + dage + " dage.");
+
+
+//Opgave 2.8
+
+        Scanner inputTimeZone = new Scanner(System.in);
+        System.out.println("indtast hvor mange timer du er fra Greenwich mean time GMT: ");
+        int timeZone = inputTimeZone.nextInt();
+
+        int tid = System.currentTimeMillis()ShowCurrentTime.java;
 
 }
 }
