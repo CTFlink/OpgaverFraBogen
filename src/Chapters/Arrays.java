@@ -16,6 +16,16 @@ public class Arrays {
         String navne[] = {"Christian","Dan",};
         System.out.println(navne[1] + navne[0]);
 
+        int n=1;
+        int pentagolNumber = n* ((3*n) * -1 /2);
+        System.out.println(pentagolNumber);
+
+    }
+
+
+
+
+
     }
 
 }
