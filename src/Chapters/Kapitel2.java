@@ -1,7 +1,11 @@
 package Chapters;
 
 import static java.lang.Math.*;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
+import java.util.Date;
 
 public class Kapitel2 {
     public static void main(String[] args) {
@@ -39,7 +43,7 @@ public class Kapitel2 {
             tempe.method();
     }
 }
-
+*/
 //==========================
 //Opgave 2.1
 
@@ -120,7 +124,7 @@ public class Kapitel2 {
 
       System.out.println("summen af tallene, " + first + second + third + " = " + sum);
      }
-*/
+
 //Opgave 2.7
 
      Scanner inputMinutes = new Scanner(System.in);
@@ -134,11 +138,56 @@ public class Kapitel2 {
 
 //Opgave 2.8
 
+        //Det eneste problem der er ved denne løsning er at den ikke tager højde for skudår, da man kun regner med 365 dage per år.
         Scanner inputTimeZone = new Scanner(System.in);
         System.out.println("indtast hvor mange timer du er fra Greenwich mean time GMT: ");
         int timeZone = inputTimeZone.nextInt();
 
-        int tid = System.currentTimeMillis()ShowCurrentTime.java;
+        long totalMilliseconds = System.currentTimeMillis();
+
+        // Obtain the total seconds since midnight, Jan 1, 1970
+        long totalSeconds = totalMilliseconds / 1000;
+
+        // Compute the current second in the minute in the hour
+        long currentSecond = totalSeconds % 60;
+
+        // Obtain the total minutes
+        long totalMinutes = totalSeconds / 60;
+
+        // Compute the current minute in the hour
+        long currentMinute = totalMinutes % 60;
+
+        // Obtain the total hours
+        long totalHours = (totalMinutes + timeZone*60 )/ 60;
+
+        // Compute the current hour
+        long currentHour = totalHours % 24;
+
+        System.out.println("Current time is " + currentHour + ":" + currentMinute + ":" + currentSecond + " GMT");
+
+
+//Opgave 2.9
+
+        Scanner inputVelocity = new Scanner(System.in);
+        System.out.println("indtast din start hastighed i meter / sekund : ");
+        double startHastighed = inputVelocity.nextDouble();
+
+        System.out.println("indtast din slut hastighed i meter / sekund : ");
+        double slutHastighed = inputVelocity.nextDouble();
+
+        System.out.println("indtast over hvor lang tid i sekunder accelerationen finder sted :");
+        double tidsRum = inputVelocity.nextDouble();
+
+
+        double acceleration = (slutHastighed - startHastighed) / tidsRum;
+
+        System.out.println("din gennemsnitlige acceleration over " + tidsRum + " sekunder er " + acceleration + " meter i sekundet");
+
+// Opgave 2.10
+
+        //det samme som ovenstående bare med en anden formel.
+
+//Opgave 2.11
 
 }
 }
