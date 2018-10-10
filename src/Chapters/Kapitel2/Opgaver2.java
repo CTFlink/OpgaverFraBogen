@@ -1,4 +1,4 @@
-package Chapters;
+package Chapters.Kapitel2;
 
 import static java.lang.Math.*;
 
@@ -7,9 +7,9 @@ import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.Date;
 
-public class Kapitel2 {
+public class Opgaver2 {
     public static void main(String[] args) {
-        System.out.println("gsfh");
+
 /*
 //Section 2.2
 

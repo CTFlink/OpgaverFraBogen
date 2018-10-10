@@ -3,6 +3,8 @@ package Chapters;
 public class Arrays {
     public static void main(String[] args) {
 
+
+
         //Her er lidt spas med arrays
 
         int marks[] = {1,2,3,4,5};
@@ -16,17 +18,17 @@ public class Arrays {
         String navne[] = {"Christian","Dan",};
         System.out.println(navne[1] + navne[0]);
 
-        int n=1;
-        int pentagolNumber = n* ((3*n) * -1 /2);
-        System.out.println(pentagolNumber);
+
+        for (int n=0; n<100; n++) {
+
+            int i = 100;
+            int start = 2;
+            System.out.print(i+ ((i-(start-1))%10==0 ? "\n" : " "));
+
+            int pentagolNumber = n * (3 * n - 1) / 2;
+        }
 
     }
-
-
-
-
-
     }
 
-}
 

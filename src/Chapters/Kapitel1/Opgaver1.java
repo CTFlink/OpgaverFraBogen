@@ -1,8 +1,8 @@
-package Chapters;
+package Chapters.Kapitel1;
 
 import static java.lang.Math.*;
 
-public class Kapitel1 {
+public class Opgaver1 {
 
     public static void main(String[] args) {
 
